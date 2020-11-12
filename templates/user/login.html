@@ -1,0 +1,48 @@
+{% load static %}
+{% load crispy_forms_tags %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <title>Login Form</title>
+</head>
+<body id="body2">
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8" id='input-form'>
+                <h1 class="display-4 text-white pb-2">Sign-In</h1>
+                <div class="form">
+                    <form action="" method="POST">
+                        {% csrf_token %}
+                        <input type="text" name="username" placeholder="Username"> <br>
+                        <input type="password" name="password" placeholder="Enter your Password"> <br>
+                        <button class="btn btn-success">Submit</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="display1">
+                    <h1 class="text-center text-white">Onkar Nardekar</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script>
+    // Querying All Input Fields
+    var form_fields = document.getElementsByTagName('input')
+    form_fields[1].placeholder = 'Username..';
+    form_fields[2].placeholder = 'Enter Password...';
+
+    for (var field in form_fields) {
+        form_fields[field].className += 'form-control'
+    }
+</script>
+
+</html>

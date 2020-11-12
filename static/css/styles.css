@@ -1,0 +1,44 @@
+#form-input{
+    border-radius: 50px;
+    background: linear-gradient(145deg, #07579c, #064983);
+    box-shadow:  5px 5px 6px #053865, 
+                 -5px -5px 6px #096abf;
+    padding: 80px;
+}
+
+#body1{
+    background: #075192;
+}
+
+#body2{
+    background: #015616;
+}
+
+.display{
+    margin-top: 100px;
+    border-radius: 50px;
+    background: #075192;
+    box-shadow: inset 5px 5px 6px #053865, 
+                inset -5px -5px 6px #096abf;
+    padding: 20px 20px;
+    margin-bottom: 30px;
+}
+
+#input-form{
+    margin-top: 100px;
+    padding: 80px;
+    border-radius: 50px;
+    background: linear-gradient(145deg, #015c18, #014d14);
+    box-shadow:  5px 5px 6px #013b0f, 
+             -5px -5px 6px #01711d;
+}
+
+.display1{
+    margin-top: 120px;
+    border-radius: 50px;
+    background: #015616;
+    box-shadow: inset 5px 5px 6px #013b0f, 
+                inset -5px -5px 6px #01711d;
+    padding: 20px 20px;
+    margin-bottom: 30px;
+}
